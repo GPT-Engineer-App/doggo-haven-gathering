@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Paw, Heart, Shield } from "lucide-react";
+import { Heart, Shield } from "lucide-react";
 
 const Index = () => {
   return (
@@ -33,9 +33,9 @@ const Index = () => {
         <h2 className="text-3xl font-semibold mb-6">Why Own a Dog?</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "Companionship", icon: <Paw className="h-8 w-8 mb-2" />, description: "Dogs provide unconditional love and loyalty." },
-            { title: "Health Benefits", icon: <Heart className="h-8 w-8 mb-2" />, description: "Owning a dog can reduce stress and improve your health." },
-            { title: "Security", icon: <Shield className="h-8 w-8 mb-2" />, description: "Dogs can help protect your home and family." },
+            { title: "Companionship", description: "Dogs provide unconditional love and loyalty." },
+            { title: "Health Benefits", icon: <Heart className="h-6 w-6 mb-2" />, description: "Owning a dog can reduce stress and improve your health." },
+            { title: "Security", icon: <Shield className="h-6 w-6 mb-2" />, description: "Dogs can help protect your home and family." },
           ].map((benefit) => (
             <Card key={benefit.title}>
               <CardHeader>
